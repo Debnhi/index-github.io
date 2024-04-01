@@ -1,0 +1,25 @@
+@import url(https://fonts.googleapis.com/css?family=Tangerine);
+
+h1{
+    color: rgb(171, 154, 210);
+    font-family: "tangerine";
+    font-size: 55px;
+ 
+}
+h2{
+    color: rgb(251, 251, 251);
+    font-family: 'tangerine';
+    font-size: 4rem;
+}
+p{
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+img{
+    width: 150px;
+    height: 120px;
+    
+}
+body{
+    background-image: url(./../media/color.jpeg); 
+}
