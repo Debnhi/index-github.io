@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 2px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+header{
+    display: flex;
+    align-items: center;
+    background-color:rgb(14, 35, 74);
+   justify-content: space-between;
+   padding: 2rem;
+
+}
+.logo{
+   max-width: screm;
+   height: 50px;
+}
+.nav-list{
+    list-style-type:none;
+    display: flex;
+    gap: 1rem;
+   
+}
+
+.nav-list li a {
+    text-decoration: none;
+   color: rgb(228, 222, 222);
+ 
+}
+.letra{
+    color: aliceblue;
+}
+
+.abrir-menu,
+.cerrar-menu{
+    
+    display: none;
+}
+
+@media screen and (max-width: 550px){
+    .abrir-menu, 
+    .cerrar-menu{
+        display: block;
+    }
+    .nav{
+        opacity: 0;
+        visibility: hidden;
+
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgb(195, 195, 200);
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    .nav-list{
+        flex-direction: column;
+        align-items: end;
+       
+    }
+    .nav-list li a{
+        color: aliceblue;
+    }
+
+}
