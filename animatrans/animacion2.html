@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 10px;
+  height: 10px;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+}
+@keyframes example {
+  0%   {left:0px; top:0px; }
+  25%  {left:0px; top:200px;}
+  50%  {left:200px; top:0px;}
+  75%  {left:0px; top:200px;}
+  100% {right:200px; top:200px;}
+}
+
+#imagen1{
+  margin:50px;
+  width: 800px;
+  height: 800px;
+}
+
+#div2{
+  margin: 50px;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  animation-name: example2;
+  animation-duration: 4s;
+}
+@keyframes example2 {
+  0%   { left:0px; top:0px; }
+  25%  {  left:300px; top:0px;}
+  50%  {transform: rotateZ(90deg); left:300px; top:300px; }
+  75%  {transform: rotateZ(90deg); left:0px; top:300px;}
+  100% {transform: rotateZ(90deg); right:300px; top:0px;}
+}
+</style>
+</head>
+<body>
+
+<h1>CSS Animation</h1>
+
+<p>The animation-direction property specifies whether an animation should be played forwards, backwards or in alternate cycles. The following example uses the value "alternate-reverse" to make the animation run backwards first, then forwards:</p>
+  
+  <div> 
+    <img id="imagen1" src="./cerezo.jpg" alt="Cerezo">
+    </div>
+    <img  id="div2" src="./colibri.jpg" alt="Colibri"> 
+</body>
+</html>
+
+
