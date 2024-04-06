@@ -1,0 +1,48 @@
+@import url(https://fonts.googleapis.com/css?family=Tangerine);
+
+h1{
+    color: rgb(171, 154, 210);
+    font-family: "tangerine";
+    font-size: 55px;
+    border-radius: 0px 0px 0px 0px;
+    border: hwb(283 0% 51%) 5px solid;
+}
+h2{
+    color: rgb(251, 251, 251);
+    font-family: 'tangerine';
+    font-size: 4rem;
+    border-radius: 0px 0px 0px 0px;
+    border: hwb(0 100% 0%) 5px solid;
+}
+div.coro{
+    margin-left: 20%;
+    margin-right: 20%;
+    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman';
+    font-size: 14px;
+    border: hwb(270 10% 71%) 10px solid;
+    border-radius: 0px 20px 20px 20px;
+    background-color: hwb(273 21% 36%);
+}
+div.letra{
+    margin-left: 20%;
+    margin-right: 20%;
+    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman';
+    font-size: 14px;
+    border: hwb(328 0% 55%) 10px solid;
+    border-radius: 0px 20px 20px 20px;
+    background-color:  hwb(339 31% 21%)
+}
+img{
+    width: 150px;
+    height: 120px;
+    
+}
+div.color{
+    border-radius: 0px 0px 0px 0px;
+    border: hwb(221 5% 53%) 5px solid;
+}
+body{
+    background-image: url(./../media/color.jpeg); 
+}
