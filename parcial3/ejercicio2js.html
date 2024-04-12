@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <title>Bienvenida del usuario</title>
+  <script type = "text/javascript">
+    
+  function alertName() { 
+    var filas1= parseInt(document.forms[0].filas.value); /*var es palabra reservada para definir la variable document toda la pagina forms el formulario
+    con un arreglo que inicia en 0 llegamos a la variable veces y se va atomar con el .value su valor paeseInt es lo que estoy leyerndo lo pasamos 
+    y lo tranformamos a entero primero es texto por el tipo y necesito pasarlo a entero para almacenarlo a veces1 document write para escribir directamente 
+    en la pagina web y se escribira las veces que usuario le indica y se escribe como un header h1*/
+    var columnas1= parseInt(document.forms[0].columnas.value);
+    document.write("<table border=3>");
+     for(i=1;i<=filas1;i++){
+        document.write("<tr>");
+        for(j=1;j<=columnas1;j++){
+            document.write("<td>celda</td>");
+        }
+        document.write("</tr>");
+        
+    }
+    document.write("</table>");
+     return true;
+}
+  </script>
+  <!-- se declara con function el nombre de la funcion y sus parametros -->
+  <style>
+    p{
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-weight: bolder;
+      font-style: italic;
+      color: aqua;
+    }
+  </style>
+</head>
+<body>
+<form id="myform" onsubmit="return alertName();"><!--Manda a llamar a la funcion y no retornma un valor onsubmint toma el valor-->
+<p>Cuantas Filas <input id="filas" name="filas" type="text" /></p> <!--ID y NOMBRE igual-->
+<p>Cuantas Columnas <input id="columnas" name="columnas" type="text" /></p> <!--ID y NOMBRE igual-->
+<p><input type="submit" /></p><!--Boton para ejecutar la accion de las veces que se va a repetir el parrafo-->
+</form>
+</body>
+</html>
+<!--DOCUMENT OBJECT MONGER "DOM"-->
