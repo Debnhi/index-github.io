@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interfaz con java</title>
+    <script type="text/javascript">
+        function asign(){
+            var nom1= document.forms[0].usuario.value;
+            var pass1= document.forms[0].pass.value;
+            if(nom1=="debnhi" && pass1=="debnhi"){
+                document.write("Acceso permitido<br>");
+                document.write("<a href=https://debnhi.github.io/portafoliodfmd.github.io/portafolio.html> Portafolio</a>");
+            }else{
+                document.write("Acceso denegado<br>");
+                document.write("<a href=inter.html>Regresar</a>");
+            }
+        }
+    </script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <form id="myfor," onsubmit="return asign();">
+        <p>Usuario <input id="usuario" name="usuario" type="text"/></p>
+        <p>Password <input id="pass" name="pass" type="password"/></p>
+        <p><input type="submit"/></p>
+    </form>
+</body>
+</html>
