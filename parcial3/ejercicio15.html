@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<body>
+<canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+<script>
+//const xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+//const yValues = [55, 49, 44, 3, 15];
+const xValues = ["Matematicas I", "Física I", "Programación I", "WEB I", "Ingles III","Núcleo II"];
+const yValues = [Math.floor(Math.random()*10)+1,Math.floor(Math.random()*10)+1,Math.floor(Math.random()*10)+1,Math.floor(Math.random()*10)+1,Math.floor(Math.random()*10)+1,Math.floor(Math.random()*10)+1,0];
+const barColors = ["rgba(0,0,255,0.6)", "rgba(255,0,255,0.5)","rgba(0,255,0,0.6)","rgba(255,0,0,0.6)","rgba(0,0,255,0.2)","rgba(0,255,255,0.9)"];
+new Chart("myChart", {
+ type: "bar",
+ data: {//porpiedades de la grafica 
+  labels: xValues,
+  datasets: [{//es el color de fondo de cada barra y los valores una estructura dentro de otra estructura
+    backgroundColor: barColors,
+    data: yValues
+  }]
+ },
+ options: {
+  legend: {display: false},//opciones de mostrar u ocultar y el titulo
+  title: {
+   display: true,
+   text: "World Wine Production 2018"
+  }
+ }
+});
+</script>
+</body>
+</html>
+<!--graf y char si necesita un canva con plotly solo un div NEW es el contructor-->
